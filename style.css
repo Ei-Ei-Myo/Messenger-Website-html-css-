@@ -1,0 +1,156 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.mainContainer{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    border: 1px solid lightgray;
+    top: 0;
+    position: sticky;
+    background-color: #fafafa;
+    opacity: 0.9;
+}
+.logoContainer{
+    width: 50px;
+    height: 50px;
+
+}
+.Logo{
+    width: 100%;
+}
+.menuContainer{
+
+}
+.menuItem{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 25px;
+    font-size: 16px;
+}
+.menuItem:hover{
+    border-bottom-style: solid;
+}
+.mobileImage {
+    display: none;  
+}
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titleHeader{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.description{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.left{
+    display:inline-block;
+    width:50%;
+}
+.inner{
+    width: 50%;
+    margin: 0 auto;
+}
+.blockElement{
+    display: block;
+    margin: 10px 0px;
+    border: none;
+    background-color: #F5F5F5;
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 15px;
+    padding-right:20px;
+    font-size: 15px;
+}
+.logInButton{
+    background-color: #4D4DFF; 
+    border-radius: 24px;
+    border: none;
+    color: white;
+    padding: 2px 20px 0px;
+    font-size: 19px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+}
+.inputSpan{
+    margin-bottom: 20px;
+}
+.imageOne{
+    width: 35%;
+    margin-right: 10px;
+    
+}
+.imageTwo{
+    width: 35%;
+    margin-right: 10px;
+}
+
+.Right{
+    display: inline-block;
+    width: 50%;
+}
+.rightImage{
+    width: 100%;
+}
+
+.Footer{
+    border: 10px;
+    padding: 50px;
+    margin-top: 120px;
+    text-align: center;
+    background-color: #FFFFFF;
+    
+}
+
+@media(max-width: 767px) {
+    .menuContainer{ 
+        display:none;}
+    
+    .mobileImage{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .inner{
+        width: 64%;
+        margin: 0 auto;
+    }
+    .Right {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+      } 
+    .rightImage{
+        margin: 0 -50%;
+    }
+}
+
+@media(max-width: 376px) {
+    .inner{
+       width: 95%;
+    }
+    .Footer{
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
